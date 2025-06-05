@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Example bean definition -->
+    <bean id="xmlConfiguration" class="org.MuttumVenkataYamini.IOCConfigurations.XmlConfiguration"></bean>
+   <bean id="message" class="org.MuttumVenkataYamini.DI.Message"></bean>
+    <bean id="ConstructorInjection" class="org.MuttumVenkataYamini.DI.ConstructorBasedDI">
+        <constructor-arg ref="message"/>
+
+    </bean>
+    <bean id="SetterInjection" class="org.MuttumVenkataYamini.DI.SetterBasedDI">
+        <property name="message" ref="message"/>
+    </bean>
+</beans>

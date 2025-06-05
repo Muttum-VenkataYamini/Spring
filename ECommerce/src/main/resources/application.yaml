@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Ecommerce
+  security:
+    user:
+      name: admin
+      password: admin@123
+#springdoc:
+#  api-docs:
+#    path: /v3/api-docs
+#  swagger-ui:
+#    path: /swagger-ui.html
